@@ -25,6 +25,7 @@ brew "pandoc"
 brew "python@3.10"
 brew "rbenv"
 # Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Tool to generate documentation from Terraform modules
 brew "terraform-docs"
 # Terraform version manager inspired by rbenv
