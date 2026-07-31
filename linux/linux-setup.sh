@@ -14,8 +14,6 @@ sudo snap install vlc
 sudo snap install spotify
 sudo snap install --classic obsidian
 
-
-
 echo -e "\n===Install Docker===\n"
 ./install-docker.sh
 
@@ -39,3 +37,6 @@ echo -e "\n===Custom Install===\n"
 
 echo -e "\n===Add Fonts===\n"
 ./add-hack-font.sh
+
+systemctl --user daemon-reload
+systemctl --user enable --now ssh-agent.service

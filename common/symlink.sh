@@ -1,6 +1,9 @@
 #!/bin/bash
 
-dotfileDir=$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )
+dotfileDir=$(
+  cd -- "$(dirname "$0")" >/dev/null 2>&1
+  pwd -P
+)
 
 linkDotfile() {
   dest="${HOME}/${2}"
@@ -32,3 +35,4 @@ linkDotfile zsh/zshenv .zshenv
 linkDotfile zsh/p10k.zsh .p10k.zsh
 linkDotfile tmux/tmux.conf .tmux.conf
 linkDotfile neovim .config/nvim
+linkDotfile systemd/ssh-agent.service .config/systemd/user/ssh-agent.service
